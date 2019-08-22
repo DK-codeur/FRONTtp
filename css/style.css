@@ -32,7 +32,7 @@ body {
     right: 0;
     z-index: 99;
     height: 40px;
-    padding: 0px 131px;
+    padding: 0px 4%;
     
 }
 
@@ -142,8 +142,10 @@ form {
 }
 
 .box-add {
-    max-width: 1170px;
+    background: url("../images/tutorix.jpg") no-repeat center center;
     margin: auto;
+    width: 100%;
+    height: 290px;
 }
 
 /*home-learn */
@@ -418,4 +420,99 @@ footer {
     background-color: #847f7f;
     border: none;
     width: 40px;
+}
+
+
+/* @media */
+
+@media screen and (max-width: 768px) {
+
+    /*general*/
+    .body {
+        width: 100%
+    }
+
+    /*nav cover*/
+   .no-mobil {
+       display: none;
+   }
+
+    .cover-items {
+        margin: 0%;
+    }
+
+    .slogan {
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .search {
+        width: 85%;
+    }
+
+    .cat-text-item {
+        display: flex;
+        margin: 20px 0px;
+        font-size: 13px;
+    }
+
+    .icon-cover, .icon-reading {
+        flex-wrap: wrap;
+    }
+
+    .box-add {
+        background-size: contain;
+        height: 110px;
+    }
+
+    /*jome learn*/
+    .home-learn {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .box-lang {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    .box-lang-body {
+        flex-wrap: wrap;
+    }
+
+    .box-lang-body-item {
+        width: 50%;
+    }
+
+    .box-lang-body-item a, .icon-item a {
+        font-size: 13px;
+    }
+
+    /* reading */
+    .icon-reading {
+        margin: 0px;
+    }
+
+    /*footer*/
+    .footer-info-nav {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .info-nav {
+        width: 50%;
+    }
+
+    .box-footer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-item {
+        width: 100%;
+    }
+
 }
